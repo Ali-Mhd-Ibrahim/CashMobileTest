@@ -23,6 +23,8 @@
     "category": "notification",
     "title": "Cash Mobile Mod",
     "message": "تنبيه مجدول من الخادم",
+    "image": "https://raw.githubusercontent.com/Ali-Mhd-Ibrahim/CashMobileTest/main/push_image.png",
+    "iconUrl": "https://raw.githubusercontent.com/Ali-Mhd-Ibrahim/CashMobileTest/main/push_icon.png",
     "repeat": false
   },
 

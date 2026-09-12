@@ -10,7 +10,7 @@
 
   "push": {
     "enabled": true,
-    "times": ["11:35", "20:00"],
+    "times": ["11:35", "16:33"],
     "days": [],
     "channel": "cash_general",
     "channelName": "Cash Mobile Mod",

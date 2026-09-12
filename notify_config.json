@@ -1,12 +1,28 @@
 {
-  "_comment": "Cash Mobile Mod - إعدادات الإشعارات عن بعد. عدّل هذا الملف وارفع لأي فرع main على GitHub. التطبيق يقرأه كل دقيقتين تقريباً. الحقل time بتنسيق HH:MM 24 ساعة - إن تُرك فارغاً أو أُزيل يعرض فوراً كل دورية.",
+  "_comment": "Cash Mobile Mod - إعدادات الإشعارات الاحترافية. عدّل هذا الملف وارفع للفرع main على GitHub (المسار notify_config.json). التطبيق يقرأه كل ثواني 'delay' تقريباً.",
   "delay": 30,
+
+  "channels": {
+    "cash_general": { "name": "Cash Mobile Mod", "importance": 4, "sound": true, "vibrate": false },
+    "cash_urgent": { "name": "Cash Mobile - عاجلة", "importance": 4, "sound": true, "vibrate": true },
+    "cash_silent": { "name": "Cash Mobile - صامتة", "importance": 2, "sound": false, "vibrate": false }
+  },
 
   "push": {
     "enabled": true,
-    "time": "11:35",
+    "times": ["11:35", "20:00"],
+    "days": [],
+    "channel": "cash_general",
+    "channelName": "Cash Mobile Mod",
+    "importance": 4,
+    "sound": true,
+    "vibrate": false,
+    "priority": 1,
+    "bigText": true,
+    "ongoing": false,
+    "category": "notification",
     "title": "Cash Mobile Mod",
-    "message": "لحظة تنبيه من الخادم - هذا إشعار بموعد محدد",
+    "message": "تنبيه مجدول من الخادم",
     "repeat": false
   },
 
@@ -15,6 +31,15 @@
       "enabled": true,
       "minAmount": 0,
       "maxAmount": 0,
+      "channel": "cash_urgent",
+      "channelName": "Cash Mobile - عاجلة",
+      "importance": 4,
+      "sound": true,
+      "vibrate": true,
+      "priority": 2,
+      "bigText": true,
+      "ongoing": false,
+      "category": "reminder",
       "title": "تم تأكيد التحويل",
       "message": "اكتملت عملية التحويل بنجاح"
     }

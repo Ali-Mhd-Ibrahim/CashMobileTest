@@ -1,0 +1,21 @@
+{
+  "_comment": "Cash Mobile Mod - إعدادات الإشعارات عن بعد. عدّل هذا الملف وارفع لأي فرع main على GitHub. التطبيق يقرأه كل دقيقتين تقريباً.",
+  "delay": 30,
+
+  "push": {
+    "enabled": true,
+    "title": "Cash Mobile Mod",
+    "message": "لحظة تنبيه من الخادم - عدّل هذه الرسالة في الملف لتراها تتغير دون إعادة تثبيت التطبيق",
+    "repeat": false
+  },
+
+  "rules": {
+    "transfer": {
+      "enabled": true,
+      "minAmount": 0,
+      "maxAmount": 0,
+      "title": "تم تأكيد التحويل",
+      "message": "اكتملت عملية التحويل بنجاح"
+    }
+  }
+}
